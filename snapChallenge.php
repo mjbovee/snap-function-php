@@ -22,8 +22,6 @@ function joinString($x, $y) {
 }
 
 //array functions
-$testArray = array();
-
 function fillInArray() {
 		$fill = array_fill(0, 5, 'Hi George');
 		print_r($fill);
