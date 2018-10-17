@@ -22,3 +22,10 @@ $bar = " that I'm concatenating";
 echo joinString($foo, $bar);
 echo "<br>";
 
+
+function fillInArray() {
+		$testArray = array_fill(0, 10, 'Hi George');
+		print_r($testArray);
+}
+
+fillInArray();
