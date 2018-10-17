@@ -35,6 +35,7 @@ function fillInArray() {
 		echo "<br><br>";
 }
 
+fillInArray();
 
 $anotherTestArray = array(0, 'apple', array("here's", "another", "array"), 'banana');
 
