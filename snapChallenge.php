@@ -5,6 +5,8 @@
  * Date: 10/17/18
  * Time: 8:07 AM
  */
+
+// number function
 function average($a, $b) {
 	return ($a + $b) / 2;
 }
@@ -12,6 +14,7 @@ function average($a, $b) {
 echo average(5, 4);
 echo "<br><br>";
 
+// string function
 function joinString($x, $y) {
 	return ($x = $x . $y);
 }
@@ -23,15 +26,17 @@ echo joinString($foo, $bar);
 echo "<br><br>";
 
 
+//array functions
+$testArray = array();
+
 function fillInArray() {
-		$testArray = array_fill(0, 10, 'Hi George');
-		print_r($testArray);
+		$fill = array_fill(0, 5, 'Hi George');
+		print_r($fill);
 		echo "<br><br>";
 }
 
-fillInArray();
 
-$anotherTestArray = array(0, 'apple', array(0, 1, 2), 'banana');
+$anotherTestArray = array(0, 'apple', array("here's", "another", "array"), 'banana');
 
 function anotherArrayFunction($test) {
 	print_r(array_values($test));
