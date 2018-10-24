@@ -28,8 +28,16 @@ function fillInArray() {
 		echo "<br><br>";
 }
 
-function anotherArrayFunction($test) {
+function anotherArrayFunction(array $test) {
 	print_r(array_values($test));
+	echo "<br><br>";
+}
+
+function yetAnotherArray(array $array) {
+	foreach($array as $value) {
+		$newArray[] = $value;
+	}
+	return $newArray;
 }
 
 // call everything
@@ -37,5 +45,12 @@ echo average(5, 4);
 echo "<br><br>";
 echo joinString($foo, $bar);
 echo "<br><br>";
+
+// calls for array functions
 fillInArray();
+
 anotherArrayFunction($anotherTestArray);
+$return1 = yetAnotherArray(["hi", "there", "friend"]);
+print_r($return1);
+
+echo "<br><br>";
